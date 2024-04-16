@@ -4,17 +4,36 @@
  */
 package estudiante;
 
-/**
- *
- * @author migueldedios
- */
 public class Estudiante {
+    private String nombre;
+    private int edad;
+    private String carrera;
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public String getNombre() {
+        return nombre;
     }
-    
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        if (edad >= 0) {
+            this.edad = edad;
+        } else {
+            System.out.println("La edad no puede ser negativa.");
+        }
+    }
+
+    public String getCarrera() {
+        return carrera;
+    }
+
+    public void setCarrera(String carrera) {
+        this.carrera = carrera;
+    }
 }
